@@ -1,0 +1,30 @@
+verview
+
+A 4-to-2 encoder is a combinational logic circuit that encodes 4 input lines into 2 binary outputs. At a time, only one input should be active. The encoder outputs the binary code corresponding to the active input line.
+
+Truth Table
+Input (d3 d2 d1 d0)	Output (q1 q0)
+0001	00
+0010	01
+0100	10
+1000	11
+Others	Undefined
+Boolean Equations
+
+q0 = d3 + d1
+
+q1 = d3 + d2
+
+Verilog Files
+
+encoder4_2.v – Encoder module
+
+encoder4_2tb.v – Testbench for simulation
+
+Applications
+
+Digital systems to minimize the number of bits required
+
+Input devices (e.g., keyboards) to encode pressed keys
+
+Microprocessors (used in priority encoders for interrupt handling)
